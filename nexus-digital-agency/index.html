@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Digital Agency | Creative Tech & Web Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">Nexus<span>Digital</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Transforming Ideas Into Digital Reality</h1>
+        <p>We craft modern, responsive, and accessible web applications to grow your brand online.</p>
+        <a href="#contact" class="btn">Start a Project</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="content-section gray-bg">
+        <h2>What We Offer</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Web Design & UI/UX</h3>
+                <p>Creating intuitive, accessible wireframes and stunning user-friendly website layouts.</p>
+            </div>
+            <div class="card">
+                <h3>Frontend Development</h3>
+                <p>Building responsive, fast, and cross-browser compatible HTML5 & CSS3 applications.</p>
+            </div>
+            <div class="card">
+                <h3>Digital Strategy</h3>
+                <p>Optimizing web architecture for SEO, performance, and audience engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <h2>About Nexus Digital</h2>
+        <p>Nexus Digital is a modern web development team focused on bringing high-performance web experiences to life using responsive designs, accessible interfaces, and modern coding standards.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section gray-bg">
+        <h2>Get In Touch</h2>
+        <form class="contact-form" onsubmit="event.preventDefault();">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="service">Service Needed:</label>
+            <select id="service" name="service" style="padding: 0.6rem; margin-bottom: 1.2rem; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="web-design">Web Design</option>
+                <option value="frontend-dev">Frontend Development</option>
+                <option value="digital-strategy">Digital Strategy</option>
+            </select>
+
+            <label for="message">Project Details:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your project requirements..." required></textarea>
+
+            <button type="submit" class="btn">Send Proposal Request</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nexus Digital Agency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the delicious menu items at Savory Bites including appetizers, entrees, and desserts.">
+  <title>Savory Bites | Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <h1 class="logo">Savory Bites</h1>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active" aria-current="page">Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content" class="container">
+    
+    <header class="page-title">
+      <h2>Our Special Menu</h2>
+      <p>Freshly prepared items for every taste bud.</p>
+    </header>
+
+    <!-- Menu Cards Section using CSS Grid -->
+    <section class="menu-grid" aria-label="Menu Items">
+      
+      <article class="menu-card">
+        <img 
+          src="images/dish-pasta.jpg" 
+          srcset="images/dish-pasta-small.jpg 400w, images/dish-pasta.jpg 800w" 
+          sizes="(max-width: 600px) 100vw, 30vw" 
+          alt="Freshly made creamy garlic fettuccine pasta topped with herbs"
+          loading="lazy"
+        >
+        <div class="menu-card-body">
+          <h3>Creamy Garlic Pasta</h3>
+          <p>Handcrafted fettuccine tossed in rich garlic cream sauce and fresh parmesan.</p>
+          <span class="price">$14.99</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img 
+          src="images/dish-burger.jpg" 
+          srcset="images/dish-burger-small.jpg 400w, images/dish-burger.jpg 800w" 
+          sizes="(max-width: 600px) 100vw, 30vw" 
+          alt="Gourmet beef burger served with cheddar cheese and fresh lettuce"
+          loading="lazy"
+        >
+        <div class="menu-card-body">
+          <h3>Gourmet Beef Burger</h3>
+          <p>Prime beef patty topped with aged cheddar, caramelized onions, and house sauce.</p>
+          <span class="price">$12.50</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img 
+          src="images/dish-salad.jpg" 
+          srcset="images/dish-salad-small.jpg 400w, images/dish-salad.jpg 800w" 
+          sizes="(max-width: 600px) 100vw, 30vw" 
+          alt="Fresh Mediterranean garden salad with feta cheese and olives"
+          loading="lazy"
+        >
+        <div class="menu-card-body">
+          <h3>Mediterranean Salad</h3>
+          <p>Crisp greens, cucumbers, kalamata olives, and feta cheese drizzled with olive oil.</p>
+          <span class="price">$10.99</span>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Savory Bites. All rights reserved.</p>
+      <p>123 Gourmet Street, Foodville | Tel: (555) 019-2834</p>
+    </div>
+  </footer>
+
+</body>
+</html>

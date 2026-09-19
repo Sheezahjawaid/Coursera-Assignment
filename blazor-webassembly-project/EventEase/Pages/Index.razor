@@ -1,0 +1,31 @@
+@using EventEase.Shared
+@page "/"
+@inject EventEase.Services.AppState AppState
+@inject NavigationManager Navigation
+
+<PageTitle>EventEase - Upcoming Events</PageTitle>
+
+<div class="container mt-4">
+    <div class="jumbotron p-4 bg-light rounded-3 mb-4">
+        <h1 class="display-5 fw-bold">Welcome to EventEase</h1>
+        <p class="col-md-8 fs-4">Discover, register, and track attendance for events seamlessly.</p>
+    </div>
+
+    <h2 class="mb-3">Upcoming Events</h2>
+
+    <div class="row">
+        @foreach (var item in AppState.Events)
+        {
+            <div class="col-md-6 col-lg-4 mb-3">
+                <EventCard Event="item" OnEventSelected="NavigateToDetails" />
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private void NavigateToDetails(int eventId)
+    {
+        Navigation.NavigateTo($"/event/{eventId}");
+    }
+}

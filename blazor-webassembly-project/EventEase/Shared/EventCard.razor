@@ -1,0 +1,27 @@
+@using EventEase.Models
+
+<div class="card mb-3 shadow-sm">
+    <div class="card-body">
+        <h5 class="card-title">@Event.Title</h5>
+        <p class="card-text">@Event.Description</p>
+        <ul class="list-group list-group-flush mb-3">
+            <li class="list-group-item"><strong>Date:</strong> @Event.Date.ToShortDateString()</li>
+            <li class="list-group-item"><strong>Location:</strong> @Event.Location</li>
+            <li class="list-group-item"><strong>Seats Available:</strong> @(Event.Capacity - Event.RegisteredCount) / @Event.Capacity</li>
+        </ul>
+        <button class="btn btn-primary" @onclick="SelectEvent">View Details</button>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public EventItem Event { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<int> OnEventSelected { get; set; }
+
+    private async Task SelectEvent()
+    {
+        await OnEventSelected.InvokeAsync(Event.Id);
+    }
+}

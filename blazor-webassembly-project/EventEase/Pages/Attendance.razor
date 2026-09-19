@@ -1,0 +1,44 @@
+@page "/attendance"
+@inject EventEase.Services.AttendanceService AttendanceService
+@inject EventEase.Services.AppState AppState
+
+<div class="container mt-4">
+    <h2>Attendance Tracker</h2>
+
+    <div class="mb-3">
+        <label class="form-label">Select Event to Track:</label>
+        <select class="form-select" @onchange="OnEventChanged">
+            <option value="0">-- Select Event --</option>
+            @foreach (var ev in AppState.Events)
+            {
+                <option value="@ev.Id">@ev.Title</option>
+            }
+        </select>
+    </div>
+
+    @if (selectedEventId > 0)
+    {
+        <h4>Attendees List:</h4>
+        <ul class="list-group">
+            @foreach (var attendee in AttendanceService.GetAttendees(selectedEventId))
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    @attendee
+                    <span class="badge bg-success rounded-pill">Checked In</span>
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+@code {
+    private int selectedEventId = 0;
+
+    private void OnEventChanged(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value?.ToString(), out int id))
+        {
+            selectedEventId = id;
+        }
+    }
+}

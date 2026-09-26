@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alex Styles | Creative Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Alex Styles</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <p class="small-text">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hi, I'm <span>Alex Styles</span></h1>
+
+            <h2>UI/UX Designer & Creative Developer</h2>
+
+            <p>
+                I create clean, modern and user-friendly digital experiences
+                using creativity, design and technology.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="profile-circle">
+                AS
+            </div>
+
+            <h3>Creative Designer</h3>
+            <p>Design • Development • Creativity</p>
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-box">
+                <h3>Who I Am</h3>
+
+                <p>
+                    I am Alex Styles, a creative UI/UX designer and developer
+                    passionate about creating attractive and easy-to-use
+                    websites.
+                </p>
+
+                <p>
+                    I enjoy combining visual design with technology to build
+                    meaningful digital experiences.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>My Goal</h3>
+
+                <p>
+                    My goal is to design websites that are visually appealing,
+                    responsive and simple for users to navigate.
+                </p>
+
+                <p>
+                    I continuously improve my skills by working on creative
+                    projects and learning modern design techniques.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card" title="Creating website structure">
+                <div class="skill-icon">HTML</div>
+                <h3>HTML</h3>
+                <p>Building structured and accessible webpages.</p>
+            </div>
+
+            <div class="skill-card" title="Styling and designing websites">
+                <div class="skill-icon">CSS</div>
+                <h3>CSS</h3>
+                <p>Creating modern layouts, colors and animations.</p>
+            </div>
+
+            <div class="skill-card" title="Creating interactive websites">
+                <div class="skill-icon">JS</div>
+                <h3>JavaScript</h3>
+                <p>Adding interactive features to websites.</p>
+            </div>
+
+            <div class="skill-card" title="Designing user experiences">
+                <div class="skill-icon">UI</div>
+                <h3>UI/UX Design</h3>
+                <p>Designing simple and user-friendly interfaces.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    🌐
+                </div>
+
+                <div class="project-content">
+                    <h3>Creative Website</h3>
+
+                    <p>
+                        A modern responsive website designed with HTML and CSS.
+                    </p>
+
+                    <button class="project-btn"
+                        onclick="openModal('Creative Website', 'A modern responsive website created using HTML, CSS and JavaScript.')">
+                        View Details
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    🎨
+                </div>
+
+                <div class="project-content">
+                    <h3>UI/UX Dashboard</h3>
+
+                    <p>
+                        A clean dashboard interface focused on usability.
+                    </p>
+
+                    <button class="project-btn"
+                        onclick="openModal('UI/UX Dashboard', 'A clean and user-friendly dashboard concept designed with modern UI/UX principles.')">
+                        View Details
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    💻
+                </div>
+
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+
+                    <p>
+                        A personal portfolio showcasing creative work and skills.
+                    </p>
+
+                    <button class="project-btn"
+                        onclick="openModal('Portfolio Website', 'A responsive personal portfolio website created to showcase skills, projects and contact information.')">
+                        View Details
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Let's Work Together</h3>
+
+                <p>
+                    Have a project idea? Feel free to get in touch with me.
+                </p>
+
+                <p>📧 alexstyles@example.com</p>
+                <p>📍 Creative City</p>
+
+            </div>
+
+
+            <form id="contactForm">
+
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <textarea id="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <button class="btn" onclick="closeModal()">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Alex Styles. All Rights Reserved.
+        </p>
+
+        <p>
+            Designed with HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

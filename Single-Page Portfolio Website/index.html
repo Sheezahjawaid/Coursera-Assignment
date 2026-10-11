@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheezah Jawaid - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar & Header -->
+  <header id="top">
+    <nav class="navbar">
+      <div class="nav-brand">Sheezah Jawaid</div>
+      
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Project Details</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="profile-section">
+    <h1>Sheezah Jawaid</h1>
+    <img src="https://via.placeholder.com/150" alt="Sheezah Jawaid Profile" class="profile-img">
+    <p>
+      I am a Software Engineering student and Frontend Web Developer experienced in building responsive single-page applications using HTML, CSS, JavaScript, and React.
+    </p>
+  </section>
+
+  <!-- Skills Section with Logos -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <p>HTML5</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <p>CSS3</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <p>React.js</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        <p>Git & GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Sindh Smart Teacher Portal (SSTP-EMS)</h3>
+      <p>An automated web portal designed to handle exam paper distribution logistics, teacher evaluation tracking, and grade processing.</p>
+    </div>
+    <div class="project-card">
+      <h3>Gym Management System</h3>
+      <p>A multi-page single-page application (SPA) crafted with React and Bootstrap 5 to track membership and schedules.</p>
+    </div>
+    <div class="project-card">
+      <h3>EventEase Web App</h3>
+      <p>A modern web interface built for automated event creation, registration forms, and attendance monitoring.</p>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations" class="recommendations-section">
+    <h2>Recommendations</h2>
+    <div id="all_recommendations" class="recommendations-list">
+      <div class="recommendation">
+        <p>“Sheezah is an exceptionally dedicated frontend developer with great focus on code quality.”</p>
+        <span>- Academic Advisor</span>
+      </div>
+      <div class="recommendation">
+        <p>“Delivered high-quality UI components ahead of schedule on our team projects.”</p>
+        <span>- Project Classmate</span>
+      </div>
+      <div class="recommendation">
+        <p>“Demonstrates excellent problem-solving skills in React and web standards.”</p>
+        <span>- Senior Developer</span>
+      </div>
+    </div>
+
+    <!-- Recommendation Form -->
+    <div class="add-recommendation">
+      <h3>Add a Recommendation</h3>
+      <textarea id="new_recommendation" placeholder="Write a recommendation..."></textarea>
+      <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+    </div>
+  </section>
+
+  <!-- Pop-up Confirmation -->
+  <div id="popup" class="popup" style="display:none;">
+    <p>Thank you for submitting a recommendation!</p>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+
+  <!-- Home Icon / Top Navigation Anchor -->
+  <div class="iconbutton">
+    <a href="#top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+      </svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

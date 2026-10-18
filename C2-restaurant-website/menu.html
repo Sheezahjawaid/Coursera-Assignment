@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the menu at Delicious Eats, featuring appetizers, main courses, desserts, and beverages.">
+    <title>Our Menu - Delicious Eats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <h1>Our Menu</h1>
+        <img src="images/logo.jpg" alt="Delicious Eats Logo" class="logo" width="200" height="200">
+    </header>
+
+    <nav class="site-nav" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" aria-current="page">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content" class="container">
+        <h2>Menu Categories</h2>
+        <div class="menu-grid">
+            <article class="menu-card">
+                <h3>Appetizers</h3>
+                <p>Delicious starters to begin your meal.</p>
+                <img src="images/dish1.jpg" 
+                     srcset="images/dish1.jpg 400w" 
+                     sizes="(max-width: 768px) 100vw, 50vw" 
+                     alt="A freshly prepared appetizer platter" 
+                     class="responsive-img">
+            </article>
+
+            <article class="menu-card">
+                <h3>Main Courses</h3>
+                <p>Satisfying entrees to delight your palate.</p>
+                <img src="images/dish2.jpg" 
+                     srcset="images/dish2.jpg 400w" 
+                     sizes="(max-width: 768px) 100vw, 50vw" 
+                     alt="Savory main course entree served hot" 
+                     class="responsive-img">
+            </article>
+
+            <article class="menu-card">
+                <h3>Desserts</h3>
+                <p>Sweet treats to finish your dining experience.</p>
+                <img src="images/dish3.jpg" 
+                     srcset="images/dish3.jpg 400w" 
+                     sizes="(max-width: 768px) 100vw, 50vw" 
+                     alt="Decadent slice of pie for dessert" 
+                     class="responsive-img">
+            </article>
+
+            <article class="menu-card">
+                <h3>Beverages</h3>
+                <p>A selection of drinks to complement your meal.</p>
+                <img src="images/dish4.jpg" 
+                     srcset="images/dish4.jpg 400w" 
+                     sizes="(max-width: 768px) 100vw, 50vw" 
+                     alt="Refreshing cold beverage served with ice" 
+                     class="responsive-img">
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2023 Delicious Eats. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -26,22 +26,23 @@ body {
   gap: 1.5rem;
 }
 
-.nav-links a {
+.topmenu {
   color: #f8fafc;
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.2s ease;
 }
 
-.nav-links a:hover {
+.topmenu:hover {
   font-weight: bold;
   text-decoration: underline;
   color: #38bdf8;
 }
 
-.profile-section h1 {
+.profile_name {
   color: #38bdf8;
   font-size: 2.5rem;
+  font-weight: bold;
   text-align: center;
   margin-top: 2rem;
 }

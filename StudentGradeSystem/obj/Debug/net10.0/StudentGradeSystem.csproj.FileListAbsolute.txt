@@ -1,0 +1,15 @@
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\bin\Debug\net10.0\StudentGradeSystem.exe
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\bin\Debug\net10.0\StudentGradeSystem.deps.json
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\bin\Debug\net10.0\StudentGradeSystem.runtimeconfig.json
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\bin\Debug\net10.0\StudentGradeSystem.dll
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\bin\Debug\net10.0\StudentGradeSystem.pdb
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\StudentGradeSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\StudentGradeSystem.AssemblyInfoInputs.cache
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\StudentGradeSystem.AssemblyInfo.cs
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\StudentGradeSystem.csproj.CoreCompileInputs.cache
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\StudentGradeSystem.sourcelink.json
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\StudentGradeSystem.dll
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\refint\StudentGradeSystem.dll
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\StudentGradeSystem.pdb
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\StudentGradeSystem.genruntimeconfig.cache
+C:\Users\RB Tech\Desktop\Coursera-Assignment\StudentGradeSystem\obj\Debug\net10.0\ref\StudentGradeSystem.dll

@@ -1,0 +1,56 @@
+@page "/register"
+@inject EventEase.Services.AppState AppState
+
+<div class="container mt-4">
+    <h2>Event Registration</h2>
+
+    @if (isSubmitted)
+    {
+        <div class="alert alert-success">
+            Thank you, <strong>@registration.Name</strong>! You have successfully registered.
+        </div>
+    }
+
+    <EditForm Model="@registration" OnValidSubmit="HandleRegistration">
+        <DataAnnotationsValidator />
+        <ValidationSummary class="text-danger" />
+
+        <div class="mb-3">
+            <label class="form-label">Full Name:</label>
+            <InputText class="form-control" @bind-Value="registration.Name" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email Address:</label>
+            <InputText class="form-control" @bind-Value="registration.Email" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Select Event:</label>
+            <InputSelect class="form-select" @bind-Value="registration.SelectedEventId">
+                <option value="0">-- Choose Event --</option>
+                @foreach (var ev in AppState.Events)
+                {
+                    <option value="@ev.Id">@ev.Title</option>
+                }
+            </InputSelect>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit Registration</button>
+    </EditForm>
+</div>
+
+@code {
+    private EventEase.Models.RegistrationModel registration = new();
+    private bool isSubmitted = false;
+
+    private void HandleRegistration()
+    {
+        var targetEvent = AppState.Events.FirstOrDefault(e => e.Id == registration.SelectedEventId);
+        if (targetEvent != null)
+        {
+            targetEvent.RegisteredCount++;
+            isSubmitted = true;
+        }
+    }
+}

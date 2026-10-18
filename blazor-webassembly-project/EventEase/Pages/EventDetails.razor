@@ -1,0 +1,43 @@
+@page "/event/{Id:int}"
+@inject EventEase.Services.AppState AppState
+@inject NavigationManager Navigation
+
+<div class="container mt-4">
+    @if (selectedEvent != null)
+    {
+        <div class="card shadow-lg">
+            <div class="card-header bg-primary text-white">
+                <h2>@selectedEvent.Title</h2>
+            </div>
+            <div class="card-body">
+                <p class="lead">@selectedEvent.Description</p>
+                <hr />
+                <p><strong>Date:</strong> @selectedEvent.Date.ToLongDateString()</p>
+                <p><strong>Location:</strong> @selectedEvent.Location</p>
+                <p><strong>Available Seats:</strong> @(selectedEvent.Capacity - selectedEvent.RegisteredCount)</p>
+                
+                <button class="btn btn-success me-2" @onclick="GoToRegister">Register Now</button>
+                <button class="btn btn-secondary" @onclick="GoBack">Back to Events</button>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-danger">Event not found!</div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private EventEase.Models.EventItem? selectedEvent;
+
+    protected override void OnInitialized()
+    {
+        selectedEvent = AppState.Events.FirstOrDefault(e => e.Id == Id);
+    }
+
+    private void GoToRegister() => Navigation.NavigateTo("/register");
+    private void GoBack() => Navigation.NavigateTo("/");
+}

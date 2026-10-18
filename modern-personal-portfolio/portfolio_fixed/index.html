@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Personal portfolio website showcasing my skills, projects, and contact information.">
+
+    <title>My Portfolio | Web Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="logo">MyPortfolio</a>
+
+            <button 
+                class="menu-toggle" 
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="intro">Hello, I'm</p>
+
+                <h1>Your Name</h1>
+
+                <h2>Web Developer</h2>
+
+                <p>
+                    I create clean, responsive, and user-friendly websites
+                    using modern web technologies.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img 
+                    src="profile.svg"
+                    alt="Web developer profile illustration">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about-content">
+                    <div>
+                        <h3>Who I Am</h3>
+
+                        <p>
+                            I am a passionate web development student interested
+                            in creating modern and accessible websites. I enjoy
+                            learning new technologies and solving problems
+                            through code.
+                        </p>
+
+                        <p>
+                            This portfolio demonstrates my knowledge of HTML,
+                            CSS, and JavaScript and shows how these technologies
+                            can work together to create an interactive website.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>My Goal</h3>
+                        <p>
+                            To continue improving my web development skills and
+                            build useful digital experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">HTML</div>
+                        <h3>HTML5</h3>
+                        <p>
+                            Creating semantic and accessible webpage structures.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">CSS</div>
+                        <h3>CSS3</h3>
+                        <p>
+                            Designing responsive layouts, animations, and
+                            attractive user interfaces.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">JS</div>
+                        <h3>JavaScript</h3>
+                        <p>
+                            Adding interactive features and dynamic behavior
+                            to websites.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="portfolio.svg"
+                                alt="Preview of portfolio website project">
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+
+                            <p>
+                                A responsive personal portfolio created with
+                                HTML, CSS, and JavaScript.
+                            </p>
+
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="todo.svg"
+                                alt="Preview of a to-do list application">
+                        </div>
+
+                        <div class="project-content">
+                            <h3>To-Do List App</h3>
+
+                            <p>
+                                An interactive task management application
+                                using JavaScript.
+                            </p>
+
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img
+                                src="landing.svg"
+                                alt="Preview of responsive landing page">
+                        </div>
+
+                        <div class="project-content">
+                            <h3>Responsive Landing Page</h3>
+
+                            <p>
+                                A mobile-friendly landing page designed using
+                                responsive CSS techniques.
+                            </p>
+
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+
+                <p class="contact-intro">
+                    Have a project or question? Send me a message.
+                </p>
+
+                <form id="contactForm" class="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input 
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Send Message
+                    </button>
+
+                    <p id="formMessage" class="form-message" role="status"></p>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            &copy; <span id="year"></span> Your Name. All rights reserved.
+        </p>
+
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+            ↑
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

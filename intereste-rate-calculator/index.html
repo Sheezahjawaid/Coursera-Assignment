@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate simple interest quickly and accurately with our free Interest Rate Calculator app.">
+    <title>Interest Rate Calculator - Simple & Accurate</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Interest Rate Calculator</h1>
+        
+        <form id="calculator-form">
+            <label for="principal">Principal Amount ($):</label>
+            <input type="number" id="principal" name="principal" required>
+
+            <label for="rate">Annual Interest Rate (%):</label>
+            <input type="number" id="rate" name="rate" step="0.1" required>
+
+            <label for="years">Time Period (Years):</label>
+            <input type="number" id="years" name="years" required>
+
+            <button type="button" id="calculate-btn">Calculate Interest</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <script src="dist/main.js"></script>
+</body>
+</html>

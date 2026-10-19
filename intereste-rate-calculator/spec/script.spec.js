@@ -1,4 +1,4 @@
-const { calculateInterest } = require('../script.js');
+const { calculateInterest } = require('../src/script.js');
 
 describe("Interest Rate Calculator Tests", function() {
     it("should calculate correct simple interest for valid numbers", function() {

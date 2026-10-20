@@ -3,48 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Calculate simple interest quickly and accurately with our free online Interest Rate Calculator. Plan your savings, loans, and investments.">
-    <title>Interest Rate Calculator - Simple & Accurate Financial Tool</title>
-    <!-- Working Favicon -->
+    <meta name="description" content="Calculate simple interest quickly and accurately with our free Interest Rate Calculator app.">
+    <title>Interest Rate Calculator - Simple & Accurate</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Working CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="calculator-card">
-        <!-- Main Heading for SEO -->
+    <main>
         <h1>Interest Rate Calculator</h1>
-        <p class="subtitle">Quickly compute simple interest on your loans or investments</p>
+        
+        <form id="calculator-form">
+            <label for="principal">Principal Amount ($):</label>
+            <input type="number" id="principal" name="principal" required>
 
-        <form id="calculator-form" novalidate>
-            <div class="form-group">
-                <label for="principal">Principal Amount ($):</label>
-                <div class="input-wrapper">
-                    <span class="currency-symbol">$</span>
-                    <input type="number" id="principal" name="principal" placeholder="e.g. 1000" min="1" step="any" required>
-                </div>
-            </div>
+            <label for="rate">Annual Interest Rate (%):</label>
+            <input type="number" id="rate" name="rate" step="0.1" required>
 
-            <div class="form-group">
-                <label for="rate">Annual Interest Rate (%):</label>
-                <div class="input-wrapper">
-                    <input type="number" id="rate" name="rate" placeholder="e.g. 5" min="0" step="0.01" required>
-                    <span class="percentage-symbol">%</span>
-                </div>
-            </div>
+            <label for="years">Time Period (Years):</label>
+            <input type="number" id="years" name="years" required>
 
-            <div class="form-group">
-                <label for="years">Time Period (Years):</label>
-                <input type="number" id="years" name="years" placeholder="e.g. 2" min="1" step="1" required>
-            </div>
-
-            <button type="button" id="calculate-btn" class="btn-calculate">Calculate Interest</button>
+            <button type="button" id="calculate-btn">Calculate Interest</button>
         </form>
 
-        <div id="result" class="result-container" aria-live="polite"></div>
+        <div id="result"></div>
     </main>
 
-    <!-- Correctly referenced JavaScript file -->
-    <script src="script.js"></script>
+    <script src="dist/main.js"></script>
 </body>
 </html>

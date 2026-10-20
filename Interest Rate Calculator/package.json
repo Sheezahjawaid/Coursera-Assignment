@@ -1,0 +1,24 @@
+{
+  "name": "interest-rate-calculator",
+  "version": "1.0.0",
+  "description": "Coursera Final Project - Interest Rate Calculator with Jasmine testing and Webpack bundling",
+  "main": "script.js",
+  "scripts": {
+    "test": "jasmine",
+    "build": "webpack"
+  },
+  "keywords": [
+    "interest-calculator",
+    "jasmine",
+    "webpack"
+  ],
+  "author": "Sheezah Jawaid",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^14.0.0",
+    "html-webpack-plugin": "^5.6.8",
+    "jasmine": "^7.0.0",
+    "webpack": "^5.112.0",
+    "webpack-cli": "^7.2.3"
+  }
+}

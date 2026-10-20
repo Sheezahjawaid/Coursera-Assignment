@@ -1,0 +1,6 @@
+asset style.css 3.45 KiB [emitted] [from: style.css] [copied] [minimized]
+asset main.js 2.47 KiB [emitted] [minimized] (name: main)
+asset index.html 1.47 KiB [emitted] [minimized]
+asset favicon.ico 1.12 KiB [emitted] [from: favicon.ico] [copied]
+./script.js 4.15 KiB [built] [code generated]
+webpack 5.112.0 compiled successfully in 3844 ms

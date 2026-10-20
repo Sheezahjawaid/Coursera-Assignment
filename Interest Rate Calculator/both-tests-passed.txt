@@ -1,0 +1,8 @@
+Randomized with seed 78425
+Started
+..
+
+
+2 specs, 0 failures
+Finished in 0.01 seconds
+Randomized with seed 78425 (jasmine --random=true --seed=78425)
